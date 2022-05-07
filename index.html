@@ -6,7 +6,7 @@
   </head>
   <body align="center">
     <h1> <font size="9">🦅  </font></h1>
-    <h1>   مصنف صقور الشاهين والحر <br/> Falcons Classifier - Shaheen or Saker </h1>
+    <h1>   مصنف صقور الشاهين والحر <br/> Falcons Classifier - Shaheen or Saker</h1>
     <p><strong>The model has more than 90% accuracy</strong></p>
     <input id="photo" type="file">
     <div id="results"></div>
@@ -18,7 +18,7 @@
         });
         const json = await response.json();
         const label = json['data'][0]['confidences'][0]['label'];
-        results.innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${label}</p>`
+        results.innerHTML = `<br/><img src="${reader.result}" width="300"><p><strong>${label}</strong></p>`
       }
       function read() {
         const reader = new FileReader();
